@@ -55,7 +55,7 @@
         $('.slider-area').owlCarousel({
             margin: 0,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 4000,
             nav: true,
             items: 1,

@@ -38,14 +38,14 @@
 </div>
 <!-- header top area end -->
 <!-- header bottom area start -->
-<div class="header-bottom">
+{% comment %} <div class="header-bottom">
   <div class="container">
     <div class="header-bottom-inner">
       <div class="row align-items-center">
         <div class="col-lg-3 col-sm-9">
           <div class="logo">
-            <a href=""><img src="{% static 'assets/images/logo.png' %}" alt="logo"  /></a>
-            <span class="logo-text">Honorary Consulate of Monaco </span>
+            <a href=""><img src="{% static 'assets/images/logo.png' %}" alt="logo" /></a>
+            <span class="logo-text">Honorary Consulate of Monaco</span>
           </div>
         </div>
         <div class="col-xl-8 col-lg-7 d-none d-lg-block">
@@ -61,7 +61,7 @@
                 <li>
                   <a href="javascript:void(0);">Gallery</a>
                 </li>
-                
+
                 <li>
                   <a href="javascript:void(0);">blog</a>
                   <ul class="submenu">
@@ -83,15 +83,69 @@
             </nav>
           </div>
         </div>
-        {% comment %} <div class="col-xl-1 col-lg-2 col-sm-3">
-          <div class="hb-right">
-            <ul>
-              <li class="search_btn">
-                <i class="fa fa-search"></i>
-              </li>
-            </ul>
+        <div class="col-12 d-block d-lg-none">
+          <div id="mobile_menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+<!-- header bottom area end -->
+
+<div class="header-bottom">
+  <div class="container-fluid">
+    <div class="header-bottom-inner">
+      <div class="row align-items-center">
+        <!-- Column 1: Logo + Text (Unchanged Width) -->
+        <div class="col-lg-4 col-sm-4">
+          <div class="logo">
+            <a href=""><img src="{% static 'assets/images/logo.png' %}" alt="logo" class="logo-img" /></a>
+            <span class="logo-text">Honorary Consulate of Monaco</span>
           </div>
-        </div> {% endcomment %}
+          <div class="time-display">
+            <p id="kathmandu-time" style="text-align: left;">Tue Mar 4, 12:10:34 PM</p>
+          </div>
+        </div>
+
+        <!-- Column 2: Menu (Wider) -->
+        <div class="col-lg-6 col-sm-4 d-none d-lg-block">
+          <div class="main-menu">
+            <nav>
+              <ul id="m_menu_active">
+                <li class="active">
+                  <a href="javascript:void(0);">Monaco</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">Relationships</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">Gallery</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Current Affairs</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- <p id="monaco-time">Tuesday, March 4, 2025, 07:27:34 AM</p> -->
+        <!-- Column 3: Second Logo (Smaller Width) -->
+        <div class="col-lg-2 col-sm-4">
+          <div class="second-logo">
+            <a href=""><img src="{% static 'assets/images/Flag_of_Nepal.gif' %}" alt="second logo" class="second-logo-img" /></a>
+          </div>
+          <div class="time-display">
+            <p id="kathmandu-time">Tue Mar 4, 12:10:34 PM</p>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (unchanged) -->
         <div class="col-12 d-block d-lg-none">
           <div id="mobile_menu"></div>
         </div>
@@ -99,4 +153,3 @@
     </div>
   </div>
 </div>
-<!-- header bottom area end -->
